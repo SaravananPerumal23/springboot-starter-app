@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './mvn clean install'
+                sh 'mvn clean install'
             }
         }
-        stage('Test') {
+        stage('Publish') {
             steps {
-                sh './mvn test'
+                sh 'echo "Publishing will Start!!"'
             }
         }
     }
