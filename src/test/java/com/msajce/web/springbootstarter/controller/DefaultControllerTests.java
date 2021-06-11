@@ -26,7 +26,7 @@ public class DefaultControllerTests {
 
     @Test
     public void shouldReturnHelloName() throws Exception {
-        this.mockMvc.perform(get("/hello?name=MSAJCE")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/hello?name=MSAJCE123")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello MSAJCE!")));
     }
 }
